@@ -1,4 +1,4 @@
-class LogWatcher < Scout::Plugin
+class ScriptExecuter < Scout::Plugin
 
 def build_report
   report( :my_size => rand(200) )
