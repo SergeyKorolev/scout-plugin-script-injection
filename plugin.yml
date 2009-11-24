@@ -2,14 +2,14 @@ options:
   service_name:
     default: ScriptInjection
     name: Service name
-    notes: Service name note 
+    notes: Service name
   script_lang:
     default: shell
     name: Script Language 
-    notes: Suported lang: shell and ruby    
+    notes: Suported languages shell and ruby
   exec_script:
     default: ps aux | grep httpd | wc -l
-    name: Script for execution 
+    name: Script for execution
     notes: This script will be executed on the server
   value_name:
     default: value
