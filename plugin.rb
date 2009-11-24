@@ -10,7 +10,7 @@ def build_report
   
   if script_lang == "shell"
     value = `#{exec_script}`.strip
-  elseif script_lang == "ruby"
+  elsif script_lang == "ruby"
     value = eval(exec_script).strip
   else
     error( :subject => "#{script_lang} is not supported", :body => "#{script_lang} is not supported. Supported languages are shell and ruby")
