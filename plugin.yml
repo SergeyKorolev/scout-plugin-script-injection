@@ -1,20 +1,12 @@
 options:
-  log_path:
-    default: /var/log/my.log
-    name: Log path
-    notes: Full path to the the log file
   service_name:
-    default: MyService
+    default: ScriptInjection
     name: Service name
-    notes: Name of the service - the owner of the log. Will be shown in the alert
-  value_pipe:
-    default: grep "something" | wc -l
-    name: Value Pipe
-    notes: A pipe command that goes right aftail tail #{log}
-  error_pipe:
-    default: egrep "PottencialError" | sort | uniq -c | sort -nr
-    name: Error Pipe
-    notes: A pipe command that goes right aftail tail #{log}
+    notes: Service name note 
+  exec_command:
+    default: ps aux | grep apache
+    name: Command for execution 
+    notes: Command for execution note
  
 metadata:
   value:
