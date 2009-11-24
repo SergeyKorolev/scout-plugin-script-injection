@@ -4,10 +4,14 @@ options:
     name: Service name
     notes: Service name note 
   exec_command:
-    default: ps aux | grep apache
+    default: ps aux | grep httpd | wc -l
     name: Command for execution 
     notes: Command for execution note
- 
+  value_name:
+    default: value
+    name: Value Name 
+    notes: Name for aggregatable values
+
 metadata:
   value:
     unit: /min
